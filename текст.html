@@ -1,0 +1,107 @@
+<html>
+<body>
+<head>
+<link rel="stylesheet" href="styles.css"> 
+</head>
+<head>
+  <style>
+        .container {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+        .container img {
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .container .text {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<P align="left">
+    <A href="index.html"><IMG src="значек.png" width="200" height="200" alt="Логотип"></A><br>
+<body>
+    <div class="container">
+        <img src="гифка.gif"width="700" height="500" alt="Пример изображения">
+        <div class="text">
+            <p>Это кадры из игры ANNO 2205</p>
+        </div>
+    </div>
+</body>
+       </p>
+    <br><br>
+<script>
+ alert("Привет, дорогой друг!")
+ </script>
+<br><center>
+<A href="руководство.pdf">руководство для начинающих</A><br>
+<A href="ворд1.docx">описание игры</A><br>
+<A href="таблица.xlsx">Таблица чит кодов</A><br></center>
+	
+	  <script>
+	function openFile() {
+            window.location.href = 'руководство.pdf'; 
+        }
+    </script>
+</head>
+    <h1>Всё что нужно для знакомство с игрой всё здесь</h1>
+    <button onclick="openFile()">Открыть файл</button>
+<script>
+
+function checkAge() {
+            let age = document.getElementById('ageInput').value;
+		age = Number(age);
+            
+            if (age >= 18) {
+                
+                window.location.href = 'Фансообщества.html'; 
+            } else {
+                
+                alert("Вам нет 18-ти лет");
+            }
+        }
+    </script><br>
+<label for="ageInput">Введите ваш возраст для доступа к странице фансообщества (строго 18+):</label>
+    <input type="number" id="ageInput" min="0" placeholder="Введите возраст" required>
+    <button onclick="checkAge()">Проверить возраст</button>
+<body>
+
+<h1>Расскажите немного о себе</h1>
+
+<form action="#" method="post">
+    <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label>Выберите ваш пол:</label>
+        <label><input type="radio" name="gender" value="male" required> Мужской</label>
+        <label><input type="radio" name="gender" value="female"> Женский</label>
+    </div>
+
+    <div class="form-group">
+        <label for="country">Выберите страну:</label>
+        <select id="country" name="country">
+            <option value="russia">Россия</option>
+            <option value="usa">США</option>
+            <option value="uk">Великобритания</option>
+            <option value="germany">Германия</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="comments">Ваши комментарии:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+    </div>
+
+    <input type="submit" value="Отправить">
+</form>
+
+</body>
+</P>
+</body>
+</html>

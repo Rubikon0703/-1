@@ -1,0 +1,59 @@
+<html>  <head><style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000; 
+        }
+        .back-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+          .frames-container {
+            display: flex;
+            width: 100vw; 
+            height: 100vh; 
+        }
+
+        iframe {
+            border: none;
+        }
+
+
+        .frame1 {
+            width: 40%;         }
+
+        .frame2 {
+            width: 30%; 
+        }
+
+        .frame3 {
+            width: 30%; }        }
+    </style>
+    </head>
+    <body>
+        
+<div class="button-container">
+<A href="index.html"class="back-button">Вернуться на главную></A>
+ </div>
+<div class="frames-container">
+        <iframe src="текстовый документ.html" class="frame1"></iframe>
+        <iframe src="фансообщества.html" class="frame2"></iframe>
+        <iframe src="ссылки.html" class="frame1"></iframe>
+</div>
+</body>
+</html>
+        
